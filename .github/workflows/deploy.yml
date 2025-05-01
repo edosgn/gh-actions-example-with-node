@@ -33,7 +33,7 @@ jobs:
       # Paso 4: Incrementar semánticamente la versión y subir el nuevo tag
       - name: Bump version and push tag
         id: versioning
-        uses: edosgn/github-tag-action@v1
+        uses: edosgn/github-tag-action@main
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           DEFAULT_BUMP: patch
